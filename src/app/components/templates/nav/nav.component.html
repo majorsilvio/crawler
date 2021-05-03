@@ -1,0 +1,15 @@
+<mat-sidenav-container class="container">
+    <mat-sidenav class="sidenav" mode="side" [(opened)]="opened" fixedInViewport fixedTopGap="64">
+        <mat-nav-list  class="nav-list">
+            <a mat-list-item href="">
+                <i class="material-icons">person</i> Sign in
+            </a>
+            <a mat-list-item href="">
+                <i class="material-icons">person_add</i> Sign up
+            </a>
+        </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content class="content">
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>

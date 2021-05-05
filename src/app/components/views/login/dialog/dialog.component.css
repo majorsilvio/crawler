@@ -1,0 +1,80 @@
+mat-card {
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+}
+
+::ng-deep.mat-dialog-container {
+    padding: 0px;
+    overflow: visible;
+}
+
+mat-card-title {
+  width: 100%;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  padding: 0px;
+  background-color: #205081;
+  color: white;
+  vertical-align: middle;
+}
+
+.title {
+  width: 53%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.title > h1 {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.close {
+  width: 47%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.close > span {
+  padding: 15px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+mat-card-subtitle {
+  font-weight: bold;
+  font-size: 0.75rem;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: row;
+  color: #205081;
+}
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: #205081;
+  align-self: center;
+  margin-left: 0.5rem;
+}
+
+mat-card-footer {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+mat-card-content {
+  padding-left: 10px;
+  padding: 1rem;
+  font-size: 1.15rem;
+  text-align: center;
+}
+
+mat-card-content > p > i {
+  font-size: 1rem;
+}

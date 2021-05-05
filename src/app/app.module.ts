@@ -12,6 +12,11 @@ import {MatListModule} from '@angular/material/list';
 import {MatCardModule} from '@angular/material/card';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
+import {MatAutocompleteModule} from '@angular/material/autocomplete';
+import {MatDialogModule} from '@angular/material/dialog';
+
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+
 
 
 
@@ -22,6 +27,8 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/templates/header/header.component';
 import { NavComponent } from './components/templates/nav/nav.component';
 import { LoginComponent } from './components/views/login/login.component';
+import { DialogComponent } from './components/views/login/dialog/dialog.component';
+import { RegisterComponent } from './components/views/register/register.component';
 
 
 
@@ -31,10 +38,14 @@ import { LoginComponent } from './components/views/login/login.component';
     AppComponent,
     HeaderComponent,
     NavComponent,
-    LoginComponent
+    LoginComponent,
+    DialogComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    ReactiveFormsModule,
     AppRoutingModule,
     MatToolbarModule,
     BrowserAnimationsModule,
@@ -44,7 +55,9 @@ import { LoginComponent } from './components/views/login/login.component';
     MatListModule,
     MatCardModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatAutocompleteModule,
+    MatDialogModule
     
   ],
   providers: [],
